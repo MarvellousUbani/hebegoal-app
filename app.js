@@ -13,6 +13,8 @@ require('./config/passport')(passport);
 // DB Config
 const db = require('./config/keys').mongoURI;
 
+const User = require('../models/user');
+
 // Connect to MongoDB
 mongoose
   .connect(

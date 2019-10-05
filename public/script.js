@@ -28,7 +28,6 @@ let goal = {
 	count:0
 }
 
-showGoals();
 
 
   if(users == null){
