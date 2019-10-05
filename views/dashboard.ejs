@@ -1,3 +1,82 @@
-<h1 class="mt-4">Dashboard</h1>
-<p class="lead mb-3">Welcome <%= user.name %></p>
-<a href="/users/logout" class="btn btn-secondary">Logout</a>
+
+<main class="dashboard-area">
+      <div class="profile-col">
+          <h4 class="hi-name">Hi <span class="hi-user"><%= user.name %></span></h4>
+          <p class="hi-email"><%= user.email %></p>
+      </div>
+      <div class="goal-board">
+          <div class="logo-row"><img src="Group.png" class="img-fluid logo-img"/></div>
+          
+          <ul class="sub-goal-menu">
+              <li class="sg-goal-btn"><a href="/dashboard"><img src="add.png" class="img-fluid">Goal</a></li>
+              <li class="sg-report-btn"><a href="/statistics"><img src="report.png" class="img-fluid">Report</a></li>
+              <li class="sg-logout-btn"><a href="/logout"><img src="logout.png" class="img-fluid"> Logout</a></li>
+          </ul>
+          <div class="sub-goal-board"> 
+
+            <p class="h2"><img src="arrow.png" class="img-fluid arrow-img">Goals</p>
+              <div class="max-five text-center">
+              
+              <div class="goal-welcome-text">
+              <p class="h2">Welcome!</p>
+              <p class="cg-text"> You currently do not have any goal. Kindly click on the "Create Goal" to get started!</p>
+              <button class="btn btn-primary btn-green" data-toggle="modal" data-target="#addGoal"><i class="fa fa-plus" aria-hidden="true"></i> Create Goal </button>
+              </div>
+
+             </div>
+               
+
+            <div class="goal-boxes">
+
+
+            </div>
+
+
+
+          </div>
+      </div>
+
+      <!-- The Modal -->  
+      <div class="modal" id="addGoal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Set a Goal</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              Goal Name <input type="text" id="goalname" class="form-control"/>
+              Goal Description <input type="text" id="goaldesc" class="form-control"/>
+              Due Date <input type="date" id="duedate" class="form-control"/>
+              Priority <select id="priority" class="form-control">
+              <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+              </select>
+
+              Difficulty <select id="difficulty" class="form-control">
+                <option value="easy">Easy</option>
+                <option value="possible">Possible</option>
+                <option value="tough">Tough</option>
+                <option value="impossible">Impossible</option>
+            </select>
+
+            Reward <input type="text" id="reward" class="form-control">
+            <button class = "btn btn-green save-goal">Save</button>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+  </main>
+  <script type="text/javascript" src = "script.js"></script>

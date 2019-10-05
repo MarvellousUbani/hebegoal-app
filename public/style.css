@@ -1,0 +1,568 @@
+* {
+	margin:0;
+	padding: 0;
+}
+body {
+	background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("https://www.amyporterfield.com/wp-content/uploads/2013/12/21-1200x628.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	font-family: 'Open sans', sans-serif;
+}
+
+.navbar{
+	margin-bottom: 8rem !important;
+}
+
+.home-header a {
+	text-decoration: none !important;
+		color:#256767 !important;
+	padding-left: 30px !important;
+	  font-weight: 900 !important;
+	  font-size:18px !important;
+}
+.home-header a:hover {
+	text-decoration: underline !important;
+}
+
+.home-main {
+	width: 90%;
+	padding-top: 80px;
+	text-align: center;
+	margin: auto;
+}
+.home-main h1 {
+	font-weight: 900;
+	font-size: 55px;
+	color: #80ff89;
+}
+.home-main p {
+	font-size: 30px;
+	color: #fff;
+	margin-top: 10px;
+}
+.home-main a {
+	text-decoration: none;
+	color: #256767;
+	background-color: white;
+	border-radius: 35px;
+}
+.home-main a:hover {
+	background-color:#2567679c ;
+	color: white;
+}
+.main-btn {
+	margin-top: 50px;
+}
+.login-btn {
+	padding: 18px 32px;
+}
+.get-btn {
+	margin-left: 20px;
+	padding: 18px 24px;
+}
+@media  (max-width: 800px) {
+.nav-links {
+		display: flex;
+		flex-direction: row;
+		height:auto;
+		justify-content: space-around;
+			padding-top: 30px;
+			width: 50%;
+	}
+.home-header a {
+	text-decoration: none;
+		color:#256767;
+	  font-weight: 400;
+	  font-size:15px;
+}
+	.home-header img {
+	 width: 70%;
+	height: auto;
+	padding-top: 20px;
+}
+}
+/*	where login and signup page stylin begins*/
+
+.login-main{
+	display: flex;
+	flex-direction: row;
+	 width: 80%;
+    margin: auto;
+	color:white;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+
+.register-sub-text{
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+.signup_area{
+	max-width: 800px;
+}
+.design-image {
+max-width: 50%;
+    padding-top: 2rem;
+    height: auto;
+
+}
+.signup-form{
+	max-width: 400px;
+}
+
+.signup-form input{
+   height: 45px;
+   width:100%;
+   padding:1rem 1rem;
+   border:1px solid #e5e5e5;
+   margin-bottom: .4rem;
+   border-radius: 4px;
+}
+
+.signup-form input:focus{
+   outline-width:0;
+   border-left: 2px solid #628239;
+   font-weight: bold;
+}
+
+
+.signup-form .login-link a{
+	text-decoration: none;
+	color:red;
+	font-weight: 800;
+}
+
+.login-link {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	float: right;
+}
+
+.register-btn{
+	background: #628239;
+	border:none;
+	padding:.75rem 1.5rem;
+	width:100%;
+	border-radius: 5px;
+	color:#fff;
+	font-weight: bold;
+	margin-bottom: 4rem;
+	cursor: pointer;
+}
+.reset-btn {
+	margin-top: 1rem;
+}
+.back-login {
+	margin-top: -2rem;
+
+}
+.vector{
+	height: 7.5vw;
+	max-width: 100%;
+
+}
+.success-btn {
+	text-decoration: none;
+	background: #628239;
+	border:none;
+	padding:.75rem 1.5rem;
+	border-radius: 5px;
+	color:#fff;
+	font-weight: bold;
+display: inline-block;
+    margin-top: 1rem;
+	cursor: pointer;
+}
+.success-box {
+  	text-align: center;
+  } 
+
+
+.dashboard-area{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profile-col{
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url(bg-dashboard.png) no-repeat;
+  background-size: cover;
+  flex:1;
+  height: 100vh;
+  text-align: right;
+  padding:5rem 2rem;
+  color:#fff;
+}
+
+
+.goal-board{
+  width: 85%;
+  background: #fff;
+}
+
+.hi-name{
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+  color:#9EB680;
+}
+
+.sub-goal-board{
+    background: #eee;
+    box-shadow: 1px 1px 4px #527136;
+    max-width: 100%;
+    padding: 2rem 3rem 5rem 3rem;
+    border-radius: 10px;
+    position: relative;
+    left: -100px;
+    height: auto;
+    min-height: 400px;
+    font-size: 1.2rem;
+    border-top-right-radius: 0px;
+}
+
+.sub-goal-board .max-five{
+  max-width: 450px;
+  margin:auto;
+}
+
+.goal-board .logo-img{
+  max-width: 300px;
+  margin:3rem 0;
+}
+
+.sub-goal-menu,.logo-row{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  left: -100px;
+  font-size: 1.4rem;
+  margin:0;
+}
+
+.sub-goal-menu li{
+  list-style: none;
+  padding:.5rem 1.3rem;
+  border:1px solid #527136;
+  margin-left: 1rem;
+  border-radius: 4px;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.sub-goal-board .cg-text{
+  margin:3rem auto;
+}
+
+.sub-goal-board .h2{
+  letter-spacing: 1px;
+}
+
+.sub-goal-board .btn-green{
+  background: green;
+    border-color: green;
+    font-size: 1.3rem;
+    padding: .5rem 2.5rem;
+}
+
+.goal-board img{
+  max-width: 40px;
+    padding-right: .8rem;
+
+}
+
+label{
+	width:100% !important;
+}
+
+/*tgold styles*/
+ .main_content p, h3{
+	padding: 5px;
+	color: #628239;
+}
+
+.main_content span {
+	line-height: 8px;
+}
+
+.main_content a {
+	text-decoration: none;
+	color: red;
+}
+
+.main_content a:hover {
+	color: #EB5757;
+}
+
+/*New Styles */
+
+.sub-goal-menu a{
+  color:#000;
+}
+
+.sub-goal-menu a:hover{
+  text-decoration: none;
+  color:darkgreen;
+}.sub-goal-menu a{
+  color:#000;
+}
+
+.sub-goal-menu a:hover{
+  text-decoration: none;
+  color:darkgreen;
+}
+
+/*Goal list css*/
+.goal-box {
+  max-width: 100%;
+  background-color: white;
+  height: auto;
+  border-style: none;
+  border: 0.7px solid #00000052;
+  border-radius: 2px;
+  margin:2rem auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.text-box{
+width:400px;
+
+}
+.text-box h5 {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.text-box p {
+  padding-left: 1rem;
+  font-size:1rem;
+}
+.percentage-box {
+    width: 300px ;
+  border: 1px solid #000;
+  width: 210px;
+  height: 1.7rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.percentage-fill {
+   background-color: #008000;
+  width: 34px;
+  height: 100%;
+}
+.percentage-text{
+   width: 40px;
+  height: auto;
+}
+.percentage-text p{
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  padding: 2px 2px;
+}
+.date-box{
+width: 320px ;
+
+}
+.date-box p {
+  color:#5a7b30;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-top: 1.8rem;
+  padding-left: 1.8rem;
+}
+
+.save-goal{
+	    background: green;
+    margin-top: 1rem;
+    border: none;
+    padding: .5rem 1.5rem;
+    color: #fff;
+    width: 100%;
+
+}
+
+.form-control{
+	margin-bottom: .6rem !important;
+}
+
+/*statistics page design*/
+.pending-goals {
+  width: 95%;
+  height: 300px;
+    overflow: scroll;
+    margin: auto;
+}
+.pending-goals-text {
+  border: 1px solid green;
+  border-radius: 2px;
+}
+.pending-goals-text {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.goal-summary {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  margin-bottom: 2rem;
+  margin-top: 25px;
+
+}
+.goals-completed {
+  width: 22%;
+  height: auto;
+  border: 1px solid green;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #000;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.goals-completed p {
+  color: green;
+  font-size: 4.2rem;
+}
+.goals-pending{
+  width: 22%;
+  height: auto;
+  border: 1px solid green;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #000;
+    padding-top: 1rem;
+  padding-left: 1rem;
+}
+.goals-pending p {
+  color: green;
+  font-size: 4.2rem;
+}
+.goals-failed {
+  width: 22%;
+  height: auto;
+  border: 1px solid green;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #000;
+    padding-top: 1rem;
+  padding-left: 1rem;
+}
+.goals-failed p {
+  color: green;
+  font-size: 4.2rem;
+}
+.summary {
+  width: 22%;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 2px;
+  background-color:green;
+  color: #fff;
+    padding-top: 1rem;
+  padding-left: 1rem;
+}
+.goal-summary a:link {
+  color: #000;
+  text-decoration: none;
+  font-size: 13px;
+}
+.goal-summary a:hover{
+  color: green;
+}
+@media (max-width: 800px) {
+  .goal-summary {
+    flex-direction: column;
+     height: 1000px;
+    margin: auto;
+justify-content: space-around;
+
+  }
+  .goals-completed {
+    width: 100%;
+
+  }
+  .summary {
+    width: 100%;
+  }
+  .goals-pending {
+    width: 100%;
+  }
+  .goals-failed {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 800px){
+  .goal-box{
+    flex-direction: column;
+    width: 90%;
+    
+  }
+  .text-box {
+    width: 100%;
+  }
+.percentage-box {
+    margin-left: 1rem;
+}
+.date-box {
+  width: 100%;
+}
+.date-box p {
+  padding-left: 1rem;
+}
+}
+
+
+/* New Styles End */
+
+
+@media (max-width: 800px){
+  .dashboard-area{
+    flex-direction: column;
+  }
+
+  .sub-goal-board, .sub-goal-menu, .logo-row{
+    position: static;
+  }
+
+  .goal-board{
+    width:93%;
+    margin:auto;
+  }
+
+  .sub-goal-menu img{
+    display: none;
+  }
+
+ 
+}
+
+
+
+@media(max-width: 1100px){
+	.login-main{
+		flex-direction: column;
+	}
+
+   .signup_area{
+   	   margin:auto;
+   	   text-align: center;
+   	margin-bottom: 20px;
+   }
+
+   .signup-form{
+   	  margin:auto;
+   	  text-align: center;
+   }
+  .success-box {
+  	text-align: center;
+  } 
+}
+
+
