@@ -1,5 +1,5 @@
 {
-  "name": "hebe goal app",
+  "name": "hebe-goal-app",
   "version": "2.0.0",
   "description": "Node.js app",
   "main": "app.js",
