@@ -1,12 +1,13 @@
 {
-  "name": "node_passport_login",
+  "name": "hebe goal app",
   "version": "2.0.0",
-  "description": "Node.js authentication with Passport",
+  "description": "Node.js app",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
+  "heroku-run-build-script": true,
   "keywords": [],
   "author": "",
   "license": "ISC",
