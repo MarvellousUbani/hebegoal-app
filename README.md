@@ -1,8 +1,8 @@
-# Node.js & Passport Login
+# Hebe Goal App 
 
-This is a user login and registration app using Node.js, Express, Passport, Mongoose, EJS and some other packages.
+A Goal App built by the Team
 
-### Version: 2.0.0
+### Version: 1.1.0
 
 ### Usage
 
